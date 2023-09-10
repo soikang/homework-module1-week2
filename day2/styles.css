@@ -9,6 +9,16 @@ header {
     background: no-repeat lightgrey url(images/cliff_ocean.jpg);
     background-size: 1500px;
 }
+#activities header {
+    background: no-repeat lightgrey url(images/runfly.jpg);
+    background-size: 1500px;
+}
+
+#contact header {
+    background: no-repeat lightgrey url(images/cliff_rock.jpg);
+    background-size: 1500px;
+}
+
 .main-header {
     background-color: rgb(255, 255, 255, 0.8);
     width: 750px; /* HW instructions says 700px but 'contact' goes to another line so had to adjust to 750px */
@@ -132,3 +142,130 @@ footer #nondisclaimer .social .fa-instagram {
     background: #125688;
     color: white;
 }
+/* Activities */
+table {
+    width: 1000px;
+    margin: 4em auto 0 auto;
+}
+caption {
+    background: #852b1b;
+    height: 40px;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-top: 1em;
+}
+thead {
+    background: #BDE1FF;
+}
+tbody {
+    background: #eeffe6;
+    text-align: center;
+}
+th,td {
+    width: 225px;
+    height: 75px;
+    vertical-align: middle;
+    border: solid 1px #852b1b;
+}
+th:first-child {
+    width: 125px;
+    height: 50px;
+    background: #4977d1;
+    color: #fff;
+}
+td:first-child {
+    font-weight: bold;
+    background: #BDE1FF;
+}
+/* Contact */
+main {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 30px;
+}
+main h1 {
+    color: #9ed034;   
+}
+span:first-child{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.contactinfo .email{
+    padding-top: 10px;
+}
+form {
+    padding-top: 10px;
+}
+form fieldset{
+    border: solid 3px #9ed034;
+}
+form legend {
+    color: #4977d1;
+    text-transform: uppercase;
+    font-weight: bold;;
+}
+label {
+    font-weight: bold;
+}
+/* text box */
+.textbox {
+    /* padding-top: 20px; */
+}
+.textbox label {
+    display: block;
+    padding-top: 10px;
+}
+input {
+    width: 500px;
+}
+/* radio buttons */
+.radios {
+    padding-top: 10px;
+}
+input[type="radio"]{
+    width: 25px;
+}
+/* text box */
+.selectmenu {
+    padding-top: 10px;
+}
+.selectmenu select {
+    width: 200px;
+    height: 20px;
+    text-align: center;;
+}
+/* text box */
+.commentbox label {
+    display: block;
+    padding-top: 10px;
+}
+textarea {
+    width: 500px;
+    height: 200px;
+}
+/* inqurie button */
+form .button{
+    margin: 10px 0 10px 0;
+    width: 500px;
+    display: flex;
+    justify-content: end;
+}
+form .button input[type=submit]{
+    background-color: #4977d1;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: bold;
+    margin: 10px 0 10px 0;
+    width: 100px;
+    height: 35px;
+}
+
+/* 
+margin, padding
+• color, font-size, font-weight, text-align, texttransform
+• width, height, border, display, resize
+• background-color
+Contextual (ex: form .button)
+• Pseudo-class (ex: span: first-child
+Colors: #9ed034, #4977D1, #fff */
