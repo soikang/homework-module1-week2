@@ -8,20 +8,21 @@ header {
 #home header {
     background: no-repeat lightgrey url(images/cliff_ocean.jpg);
     background-size: 1500px;
+    /* background-size: 100%;  /*This will make the background image full width of the screen but the instruction says 1500px  */
 }
 #activities header {
     background: no-repeat lightgrey url(images/runfly.jpg);
     background-size: 1500px;
+    /* background-size: 100%;  /*This will make the background image full width of the screen but the instruction says 1500px  */
 }
-
 #contact header {
     background: no-repeat lightgrey url(images/cliff_rock.jpg);
     background-size: 1500px;
+    /* background-size: 100%;   /*This will make the background image full width of the screen but the instruction says 1500px  */
 }
-
 .main-header {
     background-color: rgb(255, 255, 255, 0.8);
-    width: 750px; /* HW instructions says 700px but 'contact' goes to another line so had to adjust to 750px */
+    width: 700px; /* HW instructions says 700px but 'contact' goes to another line so had to adjust to 750px - changed it back to 700px again */
     margin: 2em auto 0 auto;
     min-height: 100px;
     height: 100px;
@@ -186,6 +187,9 @@ main {
 main h1 {
     color: #9ed034;   
 }
+main p {
+    padding-bottom: 10px;
+}
 span:first-child{
     text-transform: uppercase;
     font-weight: bold;
@@ -194,10 +198,10 @@ span:first-child{
     padding-top: 10px;
 }
 form {
-    padding-top: 10px;
+    padding-top: 20px;
 }
 form fieldset{
-    border: solid 3px #9ed034;
+    border: solid 2px #9ed034;
 }
 form legend {
     color: #4977d1;
@@ -209,7 +213,7 @@ label {
 }
 /* text box */
 .textbox {
-    /* padding-top: 20px; */
+    padding-left: 20px;
 }
 .textbox label {
     display: block;
@@ -221,13 +225,17 @@ input {
 /* radio buttons */
 .radios {
     padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
 }
 input[type="radio"]{
-    width: 25px;
+    width: 20px;
 }
 /* text box */
 .selectmenu {
     padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
 }
 .selectmenu select {
     width: 200px;
@@ -238,15 +246,17 @@ input[type="radio"]{
 .commentbox label {
     display: block;
     padding-top: 10px;
+    padding-left: 20px;
 }
 textarea {
     width: 500px;
     height: 200px;
+    margin-left: 20px;
 }
 /* inqurie button */
 form .button{
     margin: 10px 0 10px 0;
-    width: 500px;
+    width: 520px;
     display: flex;
     justify-content: end;
 }
@@ -261,11 +271,14 @@ form .button input[type=submit]{
     height: 35px;
 }
 
-/* 
-margin, padding
+/* Below is what I need to use for the contact form styling : 
+Properties
+• margin, padding
 • color, font-size, font-weight, text-align, texttransform
 • width, height, border, display, resize
 • background-color
-Contextual (ex: form .button)
+Selectors
+• Contextual (ex: form .button)
 • Pseudo-class (ex: span: first-child
-Colors: #9ed034, #4977D1, #fff */
+Colors: #9ed034, #4977D1, #fff 
+*/
